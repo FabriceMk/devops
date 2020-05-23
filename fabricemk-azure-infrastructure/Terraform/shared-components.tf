@@ -19,6 +19,8 @@ resource "azurerm_app_service_plan" "fabricemk-sp" {
   name  = "fabricemk-sp"
   location = "${var.region}"
   resource_group_name = "${var.resource-group}"
+  kind = "Linux"
+  reserved = true
 
   sku {
     tier = "Basic"
