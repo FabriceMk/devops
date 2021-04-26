@@ -25,5 +25,9 @@ resource "azurerm_app_service_plan" "fabricemk-sp" {
     tier = "Basic"
     size = "B1"
   }
+
+  tags = {
+    Product = "Shared"
+  }
 }
 
